@@ -1,0 +1,9 @@
+stages:
+- name: Build & Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: restic-restore-sidecar
+      registry: 127.0.0.1:34558
+timeout: 60
