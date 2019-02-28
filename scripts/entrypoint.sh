@@ -5,7 +5,7 @@ echo "Hello, Restic!"
 # No arguments supplied, run backup
 if [ $# -eq 0 ]
 then
-	if [ ! -f /restic/key ]
+	if [ ! -f /ssh/key ]
 	then
 		echo "No ssh key found, aborting."
 		exit 10

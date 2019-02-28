@@ -9,7 +9,7 @@ docker build -t restic-restore-sidecar .
 ## Run
 
 ```bash
-docker run -v /path/to/id_rsa:/restic/key --env-file ./environment.env restic-restore-sidecar
+docker run -v /path/to/id_rsa:/ssh/key --env-file ./environment.env restic-restore-sidecar
 ```
 
 ## Notes
