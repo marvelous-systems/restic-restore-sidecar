@@ -13,6 +13,9 @@ then
 
 	./check-repo.sh
 	./restore.sh
+
+	echo "Bye!"
+	while :; do sleep 20; done
 fi
 
 # arguments were supplied, exec as shell command
